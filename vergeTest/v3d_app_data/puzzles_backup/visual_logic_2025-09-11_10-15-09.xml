@@ -1,0 +1,143 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20.000000000000227" scrolly="0" scale="0.9"></tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="280.3393564701082" scrolly="205.09999999999997" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="addAnnotation" id=":LXtb4U~mnQaW.9B!Q1U" x="-110" y="-30">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="true"></mutation>
+      <value name="ANNOTATION">
+        <shadow type="text" id=",:!h`iM@0JcYkN^j,R@O">
+          <field name="TEXT">1</field>
+        </shadow>
+      </value>
+      <value name="TARGET">
+        <shadow type="objectList" id="yfuT8Q1d|ZV61E2t-r0*">
+          <field name="FIELDNAME">Cube</field>
+        </shadow>
+      </value>
+      <value name="CONTENTS">
+        <shadow type="text" id="*L]l[J@_lvaPPkE8F7{5">
+          <field name="TEXT">this is a cube, bro</field>
+        </shadow>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="c%3.dQ%r$]]-CdF3pI)`">
+          <field name="TEXT">poi1</field>
+        </shadow>
+      </value>
+      <value name="ANNOTATION_NAME">
+        <shadow type="text" id=".*4!?2D{4EkjD!dh2)MH">
+          <field name="TEXT">CubeAnnotation</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id=",F)Y$iHoA|C;mn(ulLfa" inline="false" x="-110" y="70">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false" useid="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="J].8uz_G4zWB2G|a|SU|">
+          <field name="FIELDNAME">Cube</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_ifelse" id="A8A;J{4EBnL8:5bXd4^M">
+          <value name="IF0">
+            <block type="isObjectVisible" id="7l%[gJ~2q-6nfs/[g@p-">
+              <value name="VALUE">
+                <shadow type="objectList" id="}guav#c=F%.PPt$].biQ">
+                  <field name="FIELDNAME">Suzanne</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="hide" id="GiofX-v^_XCGrwNa1_pg">
+              <value name="VALUE">
+                <shadow type="objectList" id="Eo`fXmux.LK73cgT-P6n">
+                  <field name="FIELDNAME">Suzanne</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="hide" id="9(C;[nJ;H%K=yFxusF{q">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="DYk5txG?~Y]6;5[xgX?x">
+                      <field name="FIELDNAME">Suzanne.001</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="show" id="0_xM^3$[L*Ih(+Li6e=L">
+              <value name="VALUE">
+                <shadow type="objectList" id="lP:q9nGDbZAG31Ecg==9">
+                  <field name="FIELDNAME">Suzanne</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="show" id="Uq%dgWDF:$2_-+z}WaAY">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="rI9jMa_yb=h9*Mi{K,6*">
+                      <field name="FIELDNAME">Suzanne.001</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="8+i,z,WLN{W1`0~J|voE" inline="false" x="290" y="50">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="O99s|pDY:frxm_87(_N9">
+          <field name="FIELDNAME">Cube</field>
+        </shadow>
+      </value>
+      <statement name="DO_OUT">
+        <block type="closeAnnotation" id="du}y88$:!8:4HIQg}#L[">
+          <value name="VALUE">
+            <shadow type="text" id="Q.9!gic{#wQy.0so$-=a">
+              <field name="TEXT">1</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="openAnnotation" id="jLB3K1aGY+V70!tRC@]T" x="630" y="70">
+      <value name="VALUE">
+        <shadow type="text" id="f#R?jfXvxefwo%?]`?=x">
+          <field name="TEXT">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="z@(q.Un:KXWI1Q2Ig]C3" inline="false" x="290" y="230">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false" useid="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="2@Y,o._vp~E3Qmqp7NP,">
+          <field name="FIELDNAME">Suzanne</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="openAnnotation" id=",{Lhg~EUoDIva6$vU_b!">
+          <value name="VALUE">
+            <shadow type="text" id="fd~%/[2i2b1EtKd^`/Bk">
+              <field name="TEXT">poi1</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1141" viewport-y="38" viewport-w="336" viewport-h="306.5" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

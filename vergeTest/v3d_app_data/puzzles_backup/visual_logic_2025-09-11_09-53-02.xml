@@ -1,0 +1,37 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="20" scale="0.9"></tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="0" scrolly="-5.684341886080802e-14" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id=",F)Y$iHoA|C;mn(ulLfa" inline="false" x="30" y="30">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false" useid="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="J].8uz_G4zWB2G|a|SU|">
+          <field name="FIELDNAME">Cube</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="hide" id="GiofX-v^_XCGrwNa1_pg">
+          <value name="VALUE">
+            <shadow type="objectList" id="Eo`fXmux.LK73cgT-P6n">
+              <field name="FIELDNAME">Suzanne</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="hide" id="9(C;[nJ;H%K=yFxusF{q">
+              <value name="VALUE">
+                <shadow type="objectList" id="DYk5txG?~Y]6;5[xgX?x">
+                  <field name="FIELDNAME">Suzanne.001</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="486" viewport-y="37" viewport-w="336" viewport-h="306.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
