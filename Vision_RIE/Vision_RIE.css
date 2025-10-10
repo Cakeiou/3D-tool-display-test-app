@@ -20,6 +20,46 @@ noscript {
     height: 100%;
 }
 
+.v3d-annotation {
+    position: absolute;
+    top: -0.7em;
+    left: -0.5em;
+    width: auto;
+    min-width: 1em;
+    height: 1.4em;
+    padding: 0.3em 0.5em;
+    border: 1px solid #fff;
+    border-radius: 2em;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.4em;
+    color: #fff;
+    text-align: center;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.v3d-annotation-transparent {
+    opacity: 0.5;
+}
+
+.v3d-annotation-dialog {
+    position: absolute;
+    top: 85%;
+    left: 85%;
+    font-family: sans-serif;
+    user-select: none;
+    padding: 1em;
+    min-width: 200px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 1em;
+    font-size: 12px;
+    line-height: 1.2;
+    transition: opacity .5s;
+    visibility: hidden;
+}
+
 .fullscreen-button {
     position: absolute;
     top: 5px;

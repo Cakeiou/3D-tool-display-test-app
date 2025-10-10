@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="Init" type="InitTab" active="false" scrollx="75.99999999999977" scrolly="-242.9999999999999" scale="0.9">
-    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="o$Jsl9JMjZ4NKv8V}[Py" x="170" y="270">
+  <tab name="Init" type="InitTab" active="false" scrollx="75.99999999999955" scrolly="-260.9999999999999" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="o$Jsl9JMjZ4NKv8V}[Py" x="-30" y="290">
       <field name="LOAD_COMP_ASSETS">FALSE</field>
       <field name="FULLSCREEN">TRUE</field>
       <field name="BKG_TRANSPARENCY">TRUE</field>
@@ -8,7 +8,7 @@
       <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
   </tab>
-  <tab name="setup" type="CommonTab" active="true" scrollx="226.96542406329195" scrolly="73.33044998596904" scale="0.48715730758437703">
+  <tab name="setup" type="CommonTab" active="true" scrollx="223.80513605868452" scrolly="70.87167518283508" scale="0.4890626186678222">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="^j+Mgft~%LqVve5`_UB#">frontCabOpen</variable>
       <variable id="n#Hh]!C((AN|.%$D0Fzj">backCabOpen</variable>
@@ -369,7 +369,7 @@
                           </value>
                           <value name="CONTENTS">
                             <shadow type="text" id="S.q}_A0p^$Jk$=o#`#Uf">
-                              <field name="TEXT">status light tower</field>
+                              <field name="TEXT"> &lt;img width="" height="" src="StackLight.png" alt="stack light"&gt; </field>
                             </shadow>
                           </value>
                           <value name="ID">
@@ -466,6 +466,29 @@
           <field name="TEXT">.v3d-annotation-transparent</field>
         </shadow>
       </value>
+      <next>
+        <block type="createCSSRule" id="dU-Ytj;{S]aBwp36Rb*f">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+          <field name="PARENT">FALSE</field>
+          <value name="CSS_RULE">
+            <shadow type="text" id="9,Y.IPotij0avyQQi4xZ">
+              <field name="TEXT">.v3d-annotation-dialog</field>
+            </shadow>
+          </value>
+          <value name="CSS_RULE_CONT">
+            <shadow type="cssStyleList" id="C`Pbc-83:[mP_F}*98Kd">
+              <mutation xmlns="http://www.w3.org/1999/xhtml">
+                <prop name="background" shadowvalue="none"></prop>
+              </mutation>
+              <value name="PROP0">
+                <shadow type="text" id="v4c1}$)U`njQY-%Orx:[">
+                  <field name="TEXT">none</field>
+                </shadow>
+              </value>
+            </shadow>
+          </value>
+        </block>
+      </next>
     </block>
   </tab>
   <tab name="animations" type="CommonTab" active="false" scrollx="247.47542548268405" scrolly="26.205399382408018" scale="0.4230932901338213">
@@ -1337,5 +1360,5 @@
       </next>
     </block>
   </tab>
-  <editorsettings viewport-x="901.1999999999998" viewport-y="38" viewport-w="604.8" viewport-h="401" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="991.1999999999998" viewport-y="38" viewport-w="514.781189" viewport-h="385" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>
