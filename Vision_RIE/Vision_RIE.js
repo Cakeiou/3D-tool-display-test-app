@@ -203,10 +203,11 @@ function prepareExternalInterface(app) {
      *     console.log('Hello, World!');
      * }
      */
-
+    app.ExternalInterface.changeIframe = function(link) {
+        parent.document.getElementById("info").src = link;
+    }
 }
 
 function runCode(app, puzzles) {
     // add your code here, e.g. console.log('Hello, World!');
-
 }

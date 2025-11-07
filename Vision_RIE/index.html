@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMS 3D Tool Viewer</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Top bar */
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #B3A369;
+    color: black;
+    height: 50px;
+    padding: 0 20px 0 20px;
+  }
+
+  .top-bar .logo img{
+    display: block;
+    height: 50px;
+    width: 167px;
+  }
+
+  .top-bar .links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+
+  .container {
+    display: flex;
+    height: calc(100% - 50px);
+    position: relative;
+    transition: all 0.4s ease;
+  }
+
+  /* Main iframe area */
+  .main-content {
+    flex: 1;
+    position: relative;
+  }
+
+  .main-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  /* Overlay circular buttons */
+  .circle-btn {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #003057;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    z-index: 10;
+  }
+
+  .circle-btn:hover {
+    background-color: #003057;
+  }
+
+  .return-btn {
+    top: 15px;
+    left: 15px;
+  }
+
+  .info-btn {
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 25px;
+  }
+
+  /* Right panel */
+  .info-panel {
+    width: 0;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    transition: width 0.4s ease;
+  }
+
+  .info-panel.open {
+    width: 40%;
+    min-width: 300px;
+  }
+
+  .info-panel iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+  <div class="logo">
+    <a href="https://gatech.edu/" target="_blank" title="Georgia Institute of Technology">
+      <img src="GTOneLine_White.png" alt="Georgia Institute of Technology"/>
+    </a>
+  </div>
+  <div class="links">
+    <a href="https://sums.gatech.edu/" target="_blank">SUMS</a>
+    <a href="https://matter-systems.gatech.edu/" target="_blank">About</a>
+    <a href="https://matter-systems.gatech.edu/people?role=709" target="_blank">Contact</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="main-content">
+    <iframe src="Vision_RIE.html"></iframe>
+    <button class="circle-btn return-btn" id="return-btn">
+      <svg width="25" height="25" viewBox="0 0 20 20">
+        <line x1="4" y1="4" x2="16" y2="16" stroke="white" stroke-width="2"/>
+        <line x1="16" y1="4" x2="4" y2="16" stroke="white" stroke-width="2"/>
+      </svg>
+    </button>
+    <button class="circle-btn info-btn" id="info-btn">←</button>
+  </div>
+
+  <div class="info-panel" id="info-panel">
+    <iframe src="https://example.com" id="info"></iframe>
+  </div>
+</div>
+
+<script>
+  const infoBtn = document.getElementById('info-btn');
+  const sidePanel = document.getElementById('info-panel');
+  let isOpen = false;
+
+  infoBtn.addEventListener('click', () => {
+    isOpen = !isOpen;
+    sidePanel.classList.toggle('open', isOpen);
+    infoBtn.textContent = isOpen ? '→' : '←';
+  });
+</script>
+
+</body>
+</html>
